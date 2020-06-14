@@ -29,7 +29,7 @@ module.exports.createPost = (event, context, callback) => {
         return callback(
             null,
             response(400, {
-                error: 'Post must have a title and body and they must not be empty'
+                error: 'Post must have a title and body and they must c not be empty'
             })
         );
     }
