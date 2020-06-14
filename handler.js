@@ -143,7 +143,7 @@ module.exports.deletePost = (event, context, callback) => {
         .delete(params)
         .promise()
         .then(() =>
-            callback(null, response(200, { message: 'Post deleted successfully ............' }))
+            callback(null, response(200, { message: 'Post deleted successfully ' }))
         )
         .catch((err) => callback(null, response(err.statusCode, err)));
 };
